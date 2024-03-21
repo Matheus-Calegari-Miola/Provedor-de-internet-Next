@@ -1,0 +1,113 @@
+/* responsividade */
+
+/* small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+
+    .plans-container {
+        width: 95%;
+    }
+
+    .plan {
+        margin: 0 5px;
+    }
+}
+
+/* tablet 900px */
+@media (max-width: 900px) {
+    .main-banner p {
+        padding: 0 6rem;
+    }
+}
+
+/* celular 576px */
+@media (max-width: 576px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+      .logo {
+        font-size: 30px;
+        margin-top: 25px;
+        text-shadow: 1px 1px 4px;
+    }
+
+    .hamburguer-menu {
+        display: block;
+        color: white;
+    }
+
+   .fas.fa-bars{
+
+    font-size: 40px;
+    margin-top: 13px;
+
+   }
+    .navbar-itens {
+        display: none;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    .navbar-itens.show {
+        top: 5rem;
+        width: 36vw;
+        display: flex;
+        flex-direction: column;
+        height: 67vh;
+        background-color: purple;
+        justify-content: space-around;
+        right: -10vw;
+        transform: translateX(0);
+        animation: navLinksEntrance 1s ease forwards;
+    }
+
+    @keyframes navLinksEntrance {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .navbar-itens li {
+        text-align: center;
+        font-size: 17px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .main-banner p {
+        padding: 0 2rem;
+        margin-left: 2px;
+    }
+
+    .services-container ul{
+        flex-direction: column;
+    }
+
+    .plans-container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .contact-container{
+        padding: 3rem 2rem;
+    }
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+}
+}
