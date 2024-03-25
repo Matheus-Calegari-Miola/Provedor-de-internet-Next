@@ -2,7 +2,7 @@
 
 Este projeto simula uma página de uma empresa fictícia que oferece serviços de provedores de internet chamada NEXT. A Página foi desenvolvida utilizando HTML, CSS e Javascript, possuindo também um arquivo responsivo para se adaptar a dispositivos mobile.
 
-![Next](imG/Next.png)
+![Next](img/Next.png)
 
 ## Objetivo
 
